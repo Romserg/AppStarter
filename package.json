@@ -1,0 +1,27 @@
+{
+  "name": "app-starter",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Html/css",
+  "main": "main.js",
+  "dependencies": {
+    "jquery": "3.2.1"
+  },
+  "devDependencies": {
+	"eslint": "4.5.0",
+    "stylelint": "8.0.0",
+    "browser-sync": "2.18.13",
+    "stylelint-config-standard": "17.0.0",
+    "eslint-config-recommended": "1.5.0",
+    "localtunnel": "1.8.3"
+  },
+  "scripts": {
+    "start": "browser-sync start --server \"src\" --files \"src\" --open \"external\" --no-notify --no-ghost-mode",
+    "stylelint": "stylelint \"src/**/*.css\"",
+    "eslint": "eslint --ext .js src/",
+    "tunnel": "lt --port 3000"
+  },
+  "keywords": [],
+  "author": "Romankov Sergey",
+  "license": "MIT"
+}
