@@ -1,21 +1,20 @@
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+	display: block;
+}
+
 body {
-	font-family: Nunitosans, Arial, sans-serif;
-	font-weight: 400;
-	width: 100%;
 	height: 100%;
-	padding: 0;
-	margin: 0;
-}
-
-.clearfix::after {
-	content: '';
-	display: table;
-	width: 100%;
-	clear: both;
-}
-
-div {
-	box-sizing: border-box;
 }
 
 .wrapper {
@@ -23,43 +22,155 @@ div {
 }
 
 .content-wrapper {
-	border-left: 20px solid transparent;
-	border-right: 20px solid transparent;
 	position: relative;
-	width: 100%;
+	display: block;
+	width: auto;
 	max-width: 1170px;
 	margin: 0 auto;
 }
 
-/* Form */
+/* Main screen-------------------------------------------------- */
+
+.main-screen {
+	position: relative;
+	width: 100%;
+	height: 720px;
+	background: url(../img/bg-main.jpg) 0 0 no-repeat;
+	background-size: cover;
+	margin-bottom: 140px;
+}
+
+/* Header-------------------------------------------------- */
+
+.header {
+	position: relative;
+	height: 65px;
+}
+
+.header .logo {
+	position: absolute;
+	left: 0;
+	bottom: 12px;
+}
+
+.header .logo img {
+	display: block;
+	width: auto;
+	height: 19px;
+}
+
+.header .main-menu {
+	position: absolute;
+	width: auto;
+	text-align: right;
+	right: 0;
+	bottom: 0;
+	left: 140px;
+}
+
+.header .main-menu .menu-list {
+	list-style: none;
+	height: 40px;
+	line-height: 40px;
+	margin: 0;
+	padding: 0;
+}
+
+.header .main-menu .menu-item {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+.header .main-menu .menu-item a {
+	display: block;
+	height: 100%;
+	text-decoration: none;
+	color: #fff;
+	padding: 0 20px;
+}
+
+.header .main-menu .menu-item.hamburger {
+	position: relative;
+	margin-left: 20px;
+	width: 16px;
+	height: 12px;
+	cursor: pointer;
+}
+
+.header .main-menu .menu-item.hamburger span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #fff;
+	width: 16px;
+	height: 2px;
+}
+
+.header .main-menu .menu-item.hamburger span::before {
+	content: '';
+	width: 16px;
+	height: 2px;
+	position: absolute;
+	top: 5px;
+	left: 0;
+	background: #fff;
+}
+
+.header .main-menu .menu-item.hamburger span::after {
+	content: '';
+	width: 16px;
+	height: 2px;
+	position: absolute;
+	top: 10px;
+	left: 0;
+	background: #fff;
+}
+
+.header .main-menu .menu-item a:hover,
+.header .main-menu .menu-item.active a {
+	background-color: #fff;
+	border-radius: 5px;
+	color: #010101;
+	text-transform: uppercase;
+}
+
+.main-screen .container {
+	position: relative;
+}
+
+.main-screen .left-box {
+	display: inline-block;
+	vertical-align: top;
+	max-width: 570px;
+	margin-right: 15px;
+	margin-top: 164px;
+}
+
+.main-screen .left-box h1 {
+	max-width: 515px;
+}
+
+/* Buttons
+--------------------------------- */
 
 .button {
 	display: inline-block;
 	box-sizing: border-box;
-	height: 50px;
+	height: 40px;
 	width: auto;
 	margin: 0;
-	padding: 0 20px;
-	line-height: 50px;
-	background: #ff8e64;
-	background-image: linear-gradient(45deg, #ff8e64, #ffe641);
+	padding: 0 18px;
+	line-height: 40px;
 	border: none;
 	border-radius: 5px;
 	text-decoration: none;
 	font-family: Nunitosans, Arial, sans-serif;
+	font-style: 17px;
 	color: #fff;
-	font-size: 17px;
-	outline: none;
-	cursor: pointer;
-}
-
-.button:active {
-	transform: translate(1px, 1px);
-}
-
-.button.inverted {
-	background: #009fc5;
-	background-image: linear-gradient(45deg, #009fc5, #3cecb0);
+	background: linear-gradient(45deg, #ff8e64, #ffe641);
 }
 
 .button.empty {
@@ -67,50 +178,47 @@ div {
 	color: #000;
 }
 
+.button.inverted {
+	background: linear-gradient(45deg, #009fc5, #3cecb0);	
+}
+
 .button.play {
-	background: transparent;
-	background-image: url(../img/icon-play-button2.png);
-	border-radius: 35px;
 	width: 132px;
 	height: 132px;
-	padding: 0;
+	background: url(../img/icon-play-button.png) no-repeat 0 0;
 }
 
-.header {
-	background: url(../img/bg-main-screen.jpg) no-repeat center top / cover;
-	height: 720px;
-	margin-bottom: 200px;
+.button:active {
+	transform: translate(1px, 1px);
 }
 
-.header-logo {
-	margin-top: 36px;
-	float: left;
+.main-screen .left-box .buttons {
+	margin-top: 40px;
 }
 
-.menu {
-	float: right;
-	margin-top: 38px;
+.main-screen .left-box .button.empty {
+	margin-left: 16px;
 }
 
-.menu-items {
-	padding: 0;
-	margin: 0;
+.main-screen .right-box {
+	display: inline-block;
+	vertical-align: top;
+	max-width: 570px;
+	margin-top: 75px;
+	margin-left: 65px;
+}
+
+.main-screen .right-box img {
 	display: block;
+	width: auto;
+	height: 718px;
 }
 
-.menu-items .menu-item {
-	float: left;
-	display: block;
-	margin-right: 32px;
-}
+/* Middle---------------------------------------- */
 
-.menu-items a {
-	color: #fff;
-	text-decoration: none;
-	font-size: 15px;
-}
+.content {}
 
-/* Footer */
+/* Footer---------------------------------------- */
 
 .footer {
 	height: 110px;
