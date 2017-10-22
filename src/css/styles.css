@@ -284,6 +284,30 @@ body {
 .tablet .left-box .advantage {
 	position: relative;
 	display: block;
+	box-sizing: border-box;
+	max-width: 470px;
+	height: auto;
+	padding: 30px;
+}
+
+.tablet .left-box .advantage.bordered {
+	background: #fff;
+	border-radius: 10px;
+}
+
+.tablet .left-box .advantage img {
+	position: absolute;
+	left: 30px;
+	top: 35px;
+	width: 24px;
+	height: 24px;
+}
+
+.tablet .left-box .advantage .content {
+	display: inline-block;
+	vertical-align: top;
+	box-sizing: border-box;
+	padding-left: 40px;
 }
 
 .tablet .left-box .advantage p {
@@ -295,8 +319,8 @@ body {
 	display: inline-block;
 	vertical-align: top;
 	max-width: 570px;
-	margin-top: 75px;
-	margin-left: 65px;
+	margin-top: 120px;
+	margin-left: 180px;
 	max-height: 718px;
 }
 
