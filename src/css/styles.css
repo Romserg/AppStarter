@@ -35,10 +35,9 @@ body {
 	position: relative;
 	display: block;
 	width: 100%;
-	/* height: 720px; */
 	background: url(../img/bg-main.jpg) 0 -140px no-repeat;
-	background-size: cover;
-	margin-bottom: 140px;
+	background-size: 100% 100%;
+	margin-bottom: 105px;
 }
 
 /* Header-------------------------------------------------- */
@@ -208,12 +207,13 @@ body {
 	max-width: 570px;
 	margin-top: 75px;
 	margin-left: 65px;
+	max-height: 718px;
 }
 
 .main-screen .right-box img {
 	display: block;
-	width: auto;
-	height: 718px;
+	max-width: 100%;
+	max-height: 100%;
 }
 
 .works {
@@ -223,12 +223,16 @@ body {
 	margin-bottom: 120px;
 }
 
+.works .container {
+	margin-top: 70px;
+}
+
 .works .work {
 	box-sizing: border-box;
 	display: inline-block;
 	vertical-align: top;
 	max-width: 370px;
-	height: 380px;
+	height: auto;
 	overflow: hidden;
 	background-color: #fff;
 	margin: 10px;
@@ -242,6 +246,64 @@ body {
 
 .works .work a {
 	color: #469af4;
+}
+
+.brands {
+	position: relative;
+	display: block;
+	text-align: center;
+}
+
+.brands .container {
+	box-sizing: border-box;
+	min-height: 180px;
+	background-color: #fff;
+	border-top: 1px solid #f5f5f6;
+	border-bottom: 1px solid #f5f5f6;
+}
+
+.brands .container img {
+	margin: 80px 25px;
+}
+
+.tablet {
+	position: relative;
+	display: block;
+	margin-bottom: 120px;
+}
+
+.tablet .left-box {
+	display: inline-block;
+	vertical-align: top;
+	max-width: 570px;
+	height: auto;
+	margin-right: 15px;
+	margin-top: 234px;
+}
+
+.tablet .left-box .advantage {
+	position: relative;
+	display: block;
+}
+
+.tablet .left-box .advantage p {
+	font-size: 14px;
+	line-height: 25px;
+}
+
+.tablet .right-box {
+	display: inline-block;
+	vertical-align: top;
+	max-width: 570px;
+	margin-top: 75px;
+	margin-left: 65px;
+	max-height: 718px;
+}
+
+.tablet .right-box img {
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
 }
 
 /* Footer---------------------------------------- */
