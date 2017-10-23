@@ -792,9 +792,139 @@ body {
 	background: url(../img/icon-apply2.png) 0 0 no-repeat;
 }
 
+.contact {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+	width: 100%;
+	height: 920px;
+	padding: 120px 0;
+	background: url(../img/bg-main.jpg) 0 0 no-repeat;
+	background-size: 100% 100%;
+	text-align: center;
+}
+
+.contact .container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	max-width: 770px;
+}
+
+.contact .container .top-box {
+	max-width: 570px;
+}
+
+.contact .container .top-box h3 {
+	color: #fff;
+	font-size: 35px;
+	line-height: 50px;
+}
+
+.contact .container .top-box p {
+	color: #fff;
+	line-height: 30px;
+}
+
+.contact .container form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+	width: 770px;
+	height: 500px;
+	margin-top: 40px;
+	background-color: #fff;
+	padding: 70px 0;
+	border-radius: 10px;
+}
+
+.contact input {
+	width: 305px;
+	height: 50px;
+	box-sizing: border-box;
+	border-radius: 5px;
+	background: #f8f9fa;
+	border: 1px solid #e7e8ea;
+	font-size: 17px;
+	line-height: 23px;
+	color: #b9bdc3;
+	margin: 0 10px 20px;
+}
+
+.contact .container form textarea {
+	width: 630px;
+	background: #f8f9fa;
+	line-height: 23px;
+	font-size: 17px;
+	color: #b9bdc3;
+	border: 1px solid #e7e8ea;
+	border-radius: 5px;
+	resize: none;
+	margin-bottom: 30px;
+}
+
 /* Footer---------------------------------------- */
 
 .footer {
 	height: 110px;
-	background: lightgreen;
+}
+
+.footer .container {
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer .author {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	font-size: 0;
+}
+
+.footer .author span:nth-of-type(1),
+.footer .author span:nth-of-type(2),
+.footer .author .copyright {
+	color: #999ea8;
+	font-size: 11px;
+	line-height: 15px;
+}
+
+.footer .author span:nth-of-type(1)::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+	width: 12px;
+	height: 11px;
+	background: url(../img/icon-heart.png) 0 0 no-repeat;
+}
+
+.footer .author span:nth-of-type(1) {
+	position: relative;
+	padding-right: 18px;
+}
+
+.footer .author span:nth-of-type(2) {
+	padding-left: 6px;
+}
+
+.footer .author span:nth-of-type(3) {
+	color: #282b31;
+	font-size: 11px;
+	line-height: 15px;
+	font-weight: 700;
+}
+
+.footer .social {
+	height: 40px;
+	font-size: 0;
 }
