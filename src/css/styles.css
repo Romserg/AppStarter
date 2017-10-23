@@ -854,6 +854,7 @@ body {
 	line-height: 23px;
 	color: #b9bdc3;
 	margin: 0 10px 20px;
+	padding-left: 20px;
 }
 
 .contact .container form textarea {
@@ -866,6 +867,9 @@ body {
 	border-radius: 5px;
 	resize: none;
 	margin-bottom: 30px;
+	box-sizing: border-box;
+	padding-left: 20px;
+	padding-top: 25px;
 }
 
 /* Footer---------------------------------------- */
