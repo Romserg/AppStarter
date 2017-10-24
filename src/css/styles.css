@@ -759,6 +759,20 @@ body {
 	width: 100%;
 }
 
+@media (max-width: 960px) {
+	.plan .container {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.plan .container .left-box,
+	.plan .container .right-box {
+		padding: 0;
+		width: 100%;
+	}
+}
+
 .plan .left-box {
 	display: flex;
 	flex-direction: column;
